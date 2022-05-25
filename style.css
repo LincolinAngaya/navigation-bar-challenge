@@ -41,17 +41,33 @@ position: relative;
   .menu-bar ul li a:hover{
     
     color: blue;
-  
-  
+
     }
-    .drop-down{
+  .menu-bar .drop-down{
+     display: none;
+   }
+   .menu-bar ul li:hover .drop-down{
       display: block;
       position: absolute;
       right: 300px;
       top: 10%; 
       background-color: whitesmoke;
+     border-radius: 12px;
+     
 
     }
     .drop-down ul{
       display: block;
+      margin: 10px;
+    }
+    .drop-down ul li{
+      width: 130px;
+      padding: 10px;
+    }
+    .hero{
+      height:calc(100vh-80px);
+      background-image: url(./bg.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }

@@ -65,7 +65,8 @@ position: relative;
       padding: 10px;
     }
     .hero{
-      height:calc(100vh-80px);
+      /* height:calc(100vh-80px); */
+      height: 80vh;
       background-image: url(./bg.jpg);
       background-position: center;
       background-size: cover;

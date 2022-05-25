@@ -6,3 +6,17 @@
 body{
   font-family: sans-serif;
 }
+.menu-bar{
+  background-color:black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.logo{
+  color:white;
+  font-size: 30px;
+  
+}

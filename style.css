@@ -7,7 +7,7 @@ body{
   font-family: sans-serif;
 }
 .menu-bar{
-  background-color:black;
+  background-color:whitesmoke;
   height: 80px;
   width: 100%;
   display: flex;
@@ -16,7 +16,23 @@ body{
   padding: 0 5%;
 }
 .logo{
-  color:white;
+  color:black;
   font-size: 30px;
-  
+
 }
+.logo span{
+  color: blue;
+}
+.menu-bar ul {
+  display: flex;
+}
+.menu-bar ul li{
+list-style: none;
+padding: 10px 30px;
+}
+.menu-bar ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+
+  }

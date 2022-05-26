@@ -77,10 +77,75 @@ position: relative;
     #check{
       display: none;
     }
+
     @media (max-width:1118px){
-      .menu-bar{
-     background-color: red;
+  
+    .logo{
+     left: 8%;
       }
      
       
     } 
+    @media (max-width:944px){
+    
+      .logo{
+       left: 6%;
+       top: 20px;
+       font-size: 20px;
+        }
+        .menu-bar ul li a{
+          font-size: 15px;
+           
+        
+          }
+       
+        
+      } 
+      @media (max-width:860px){
+      
+          .menu-bar ul li a{
+            font-size: 15px;
+            }
+            label #btn{
+              display: block;
+            }
+         ul{
+           position: fixed;
+           width: 50%;
+           height: 40vh;
+           background: #344950;
+           opacity: 0.8;
+           top:30px;
+           left: -100%;
+           text-align: center;
+           transition: all .5s;
+           z-index: 1;
+          
+          }
+         
+          .menu-bar ul {
+            display: block;
+            margin: 50px 0; 
+           line-height: 30px;
+          
+          }
+         
+         ul li a{
+           font-size: 20px;
+          
+          }
+         
+          #check:checked ~ .menu-bar ul li{
+            left: 0%;
+          }
+          
+          #check:checked ~  label #btn{
+            display: none;
+
+          
+          }
+           
+          #check:checked ~ label #cancel{
+            display: block;
+          } 
+        } 

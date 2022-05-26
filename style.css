@@ -109,14 +109,14 @@ position: relative;
             label #btn{
               display: block;
             }
-         ul{
+        .menu-bar ul {
            position: fixed;
            width: 50%;
            height: 40vh;
            background: #344950;
            opacity: 0.8;
            top:30px;
-           left: -100%;
+           left: 0%;
            text-align: center;
            transition: all .5s;
            z-index: 1;
@@ -135,8 +135,8 @@ position: relative;
           
           }
          
-          #check:checked ~ .menu-bar ul li{
-            left: 0%;
+          #check:checked ~ .menu-bar ul{
+            left: -100;
           }
           
           #check:checked ~  label #btn{
@@ -148,4 +148,4 @@ position: relative;
           #check:checked ~ label #cancel{
             display: block;
           } 
-        } 
+        }

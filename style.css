@@ -64,23 +64,11 @@ position: relative;
       background-color: gray;
      }
 
-   label #btn,
-    label #cancel{
-       color:black;
-       font-size: 30px;
-       float: right;
-       line-height: 80px;
-       margin-right: 40px;
-       cursor: pointer;
-       display: none;
-    }
-    #check{
-      display: none;
-    }
-    @media (max-width:1118px){
+   
+    /* @media (max-width:1118px){
       .menu-bar{
      background-color: red;
       }
      
       
-    } 
+    }  */

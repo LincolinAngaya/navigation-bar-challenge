@@ -13,7 +13,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0 1%;
 }
 .logo{
   color:black;
@@ -43,27 +43,7 @@ position: relative;
     color: blue;
 
     }
-  .menu-bar .drop-down{
-     display: none;
-   }
-   .menu-bar ul li:hover .drop-down{
-      display: block;
-      position: absolute;
-      right: 300px;
-      top: 10%; 
-      background-color: whitesmoke;
-     border-radius: 12px;
-     
-
-    }
-    .drop-down ul{
-      display: block;
-      margin: 10px;
-    }
-    .drop-down ul li{
-      width: 130px;
-      padding: 10px;
-    }
+ 
     .hero{
       /* height:calc(100vh-80px); */
       height: 80vh;
@@ -72,3 +52,35 @@ position: relative;
       background-size: cover;
       background-repeat: no-repeat;
     }
+    .credit {
+      width: 100%;
+      height: 10vh;
+      text-align: center;
+      padding: 1rem;
+      padding-top: 1.2rem;
+      font-size: 1.5rem;
+      color: white;
+      text-align: center;
+      background-color: gray;
+     }
+
+   label #btn,
+    label #cancel{
+       color:black;
+       font-size: 30px;
+       float: right;
+       line-height: 80px;
+       margin-right: 40px;
+       cursor: pointer;
+       display: none;
+    }
+    #check{
+      display: none;
+    }
+    @media (max-width:1118px){
+      .menu-bar{
+     background-color: red;
+      }
+     
+      
+    } 

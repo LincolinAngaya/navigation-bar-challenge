@@ -13,7 +13,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0 1%;
 }
 .logo{
   color:black;
@@ -43,27 +43,7 @@ position: relative;
     color: blue;
 
     }
-  .menu-bar .drop-down{
-     display: none;
-   }
-   .menu-bar ul li:hover .drop-down{
-      display: block;
-      position: absolute;
-      right: 300px;
-      top: 10%; 
-      background-color: whitesmoke;
-     border-radius: 12px;
-     
-
-    }
-    .drop-down ul{
-      display: block;
-      margin: 10px;
-    }
-    .drop-down ul li{
-      width: 130px;
-      padding: 10px;
-    }
+ 
     .hero{
       /* height:calc(100vh-80px); */
       height: 80vh;
@@ -72,3 +52,100 @@ position: relative;
       background-size: cover;
       background-repeat: no-repeat;
     }
+    .credit {
+      width: 100%;
+      height: 10vh;
+      text-align: center;
+      padding: 1rem;
+      padding-top: 1.2rem;
+      font-size: 1.5rem;
+      color: white;
+      text-align: center;
+      background-color: gray;
+     }
+
+   label #btn,
+   label #cancel{
+       color:black;
+       font-size: 30px;
+       float: right;
+       line-height: 80px;
+       margin-right: 40px;
+       cursor: pointer;
+        display: none;
+    } 
+    #check{
+      display: none;
+    }
+
+    @media (max-width:1118px){
+  
+    .logo{
+     left: 8%;
+      }
+     
+      
+    } 
+    @media (max-width:944px){
+    
+      .logo{
+       left: 6%;
+       top: 20px;
+       font-size: 20px;
+        }
+        .menu-bar ul li a{
+          font-size: 15px;
+           
+        
+          }
+       
+        
+      } 
+      @media (max-width:860px){
+      
+          .menu-bar ul li a{
+            font-size: 15px;
+            }
+            label #btn{
+              display: block;
+            }
+        .menu-bar ul {
+           position: fixed;
+           width: 50%;
+           height: 40vh;
+           background: #344950;
+           opacity: 0.8;
+           top:30px;
+           left: 0%;
+           text-align: center;
+           transition: all .5s;
+           z-index: 1;
+          
+          }
+         
+          .menu-bar ul {
+            display: block;
+            margin: 50px 0; 
+           line-height: 30px;
+          
+          }
+         
+         ul li a{
+           font-size: 20px;
+          
+          }
+         
+          #check:checked ~ .menu-bar ul{
+            left: -100;
+          }
+          
+          #check:checked ~  label #btn{
+            display: none;
+
+          
+          }
+           
+          #check:checked ~ label #cancel{
+            display: block;
+          } 
+        }
